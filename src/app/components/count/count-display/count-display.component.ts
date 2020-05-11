@@ -27,6 +27,8 @@ export class CountDisplayComponent {
 
   public _setValue(value: any): void {
     const count = this.inputValue.nativeElement.valueAsNumber;
-    this.setCount.emit(count);
+    if (!isNaN(count)) {
+      this.setCount.emit(count);
+    }
   }
 }
