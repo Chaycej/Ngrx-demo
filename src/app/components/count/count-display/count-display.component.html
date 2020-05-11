@@ -1,0 +1,14 @@
+<div class="count-container">
+  <div class="count-text">
+    <div class="count-value">{{ count }}</div>
+    <div class="count-title">Count</div>
+  </div>
+  <div class="count-operator">
+    <button class="operator-button" (click)="_decrementCount()">-</button>
+    <button class="operator-button" (click)="_incrementCount()">+</button>
+  </div>
+  <div class="count-input-container">
+    <input class="count-input" #inputValue type="number" placeholder="value" />
+    <button class="count-input-button" (click)="_setValue()">Set value</button>
+  </div>
+</div>

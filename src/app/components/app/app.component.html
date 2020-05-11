@@ -1,0 +1,15 @@
+<mat-toolbar color="primary">
+  <button (click)="sidenav.toggle()" mat-mini-fab>
+    <mat-icon>menu</mat-icon>
+  </button>
+  <span>
+    {{ title }}
+  </span>
+</mat-toolbar>
+<mat-sidenav-container>
+  <mat-sidenav #sidenav mode="side" class="app-sidenav">
+    <nav>
+    </nav>
+  </mat-sidenav>
+  <app-count-page></app-count-page>
+</mat-sidenav-container>
