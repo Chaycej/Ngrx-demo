@@ -14,6 +14,7 @@ import { CountDisplayComponent } from '../components/count/count-display/count-d
 import { reducer } from '../state/reducers/count.reducer';
 
 // Services
+import { LoggingService } from '../services/logging.service';
 
 @NgModule({
   declarations: [
@@ -28,6 +29,7 @@ import { reducer } from '../state/reducers/count.reducer';
     StoreModule.forRoot({ state: reducer })
   ],
   providers: [
+    LoggingService
   ],
   bootstrap: [AppComponent]
 })
